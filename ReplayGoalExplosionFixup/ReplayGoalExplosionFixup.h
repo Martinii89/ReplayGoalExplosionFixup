@@ -17,6 +17,7 @@ class ReplayGoalExplosionFixup: public BakkesMod::Plugin::BakkesModPlugin/*, pub
 	virtual void onLoad();
 	virtual void onUnload();
 
+	void OnBallExplode(GoalWrapper& goal, Vector location);
 	GoalWrapper GetClosestGoal(Vector location) const;
 
 	// Inherited via PluginSettingsWindow
